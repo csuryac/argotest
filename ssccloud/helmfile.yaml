@@ -1,0 +1,13 @@
+repositories:
+- name: k8s-as-helm
+  url: https://ameijer.github.io/k8s-as-helm/
+releases:
+- name: ssccloud
+  installed: true
+  namespace: kube-system
+  chart: k8s-as-helm/secret
+  version: 1.0.4
+  values:
+  - type: Opaque
+  - secretData:
+      "access-token": ref+vault://kv-v2/application/nonprod/CMDB31340/devops?proto=http#/api_key
