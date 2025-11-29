@@ -13,4 +13,3 @@ releases:
       "access-token": <api_key>
   - annotations:
      avp.kubernetes.io/path: "kv-v2/application/nonprod/data/CMDB31340/devops"
-
