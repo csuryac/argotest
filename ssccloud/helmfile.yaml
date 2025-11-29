@@ -10,4 +10,7 @@ releases:
   values:
   - type: Opaque
   - secretData:
-      "access-token": ref+vault://kv-v2/application/nonprod/CMDB31340/devops?proto=http#/api_key
+      "access-token": <api_key>
+  - annotations:
+     avp.kubernetes.io/path: "kv-v2/application/nonprod/data/CMDB31340/devops"
+
